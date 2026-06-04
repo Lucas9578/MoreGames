@@ -1,0 +1,118 @@
+@use "reset";
+@use "variables" as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $header;
+
+  font-family: $font-text;
+
+  width: 100%;
+  padding: 10px 50px;
+  border-bottom: 1px solid white;
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    img {
+      width: 50px;
+    }
+
+    h1 {
+      span {
+        color: $primary;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__link {
+    color: white;
+
+    &:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+
+    &--active {
+      color: #3b82f6;
+      font-weight: bold;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $header;
+
+  font-family: $font-text;
+
+  width: 100%;
+  padding: 20px 50px;
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+    &__logo {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+
+      img {
+        width: 30px;
+      }
+
+      h2 {
+        span {
+          color: $primary;
+        }
+      }
+    }
+
+    h2 {
+      span {
+        color: $primary;
+      }
+    }
+
+    &__nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+
+      &__link {
+        color: white;
+        font-size: 12px;
+        text-decoration: underline;
+
+        &:hover {
+          color: $primary;
+        }
+
+        &--active {
+          color: #3b82f6;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    font-size: 12px;
+  }
+}
