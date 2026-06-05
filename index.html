@@ -6,7 +6,12 @@
     <title>Inicio - MoreGames</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,6 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Orbitron:wght@500;700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="CSS/style.css" />
   </head>
 
   <body>
@@ -41,131 +48,215 @@
 
     <main>
       <section class="hero">
-        <h2>Bienvenido a MoreGames</h2>
-        <p>Encuentra los mejores videojuegos al mejor precio.</p>
-        <a href="catalogo.html">Explorar catálogo</a>
+        <h2 class="hero__titulo">Bienvenido a MoreGames</h2>
+        <p class="hero__texto">
+          Encuentra los mejores videojuegos al mejor precio.
+        </p>
+        <a class="hero__boton" href="Page/catalogo.html"> Explorar catálogo </a>
       </section>
 
       <section class="juegos-destacados">
-        <h2>Juegos destacados</h2>
+        <div class="container">
+          <h2 class="juegos-destacados__titulo">Juegos destacados</h2>
 
-        <div class="juegos-grid">
-          <div class="juego-card">
-            <img src="" alt="" />
-            <p class="nombre">Minecraft</p>
-            <p class="precio">$U 300</p>
-            <a href="">Ver más</a>
-          </div>
+          <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="juegos-destacados__tarjeta">
+                <img
+                  class="juegos-destacados__imagen"
+                  src="IMG/Portadas/portada-minecraft.webp"
+                  alt="Minecraft"
+                />
+                <h3 class="juegos-destacados__nombre">Minecraft</h3>
+                <p class="juegos-destacados__precio">$U 300</p>
+                <a class="juegos-destacados__boton" href="">Ver más</a>
+              </article>
+            </div>
 
-          <div class="juego-card">
-            <img src="" alt="" />
-            <p class="nombre">Hollow Knight</p>
-            <p class="precio">$U 300</p>
-            <a href="">Ver más</a>
-          </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="juegos-destacados__tarjeta">
+                <img
+                  class="juegos-destacados__imagen"
+                  src="IMG/Portadas/portada-hollowknigth.webp"
+                  alt="Hollow Knight"
+                />
+                <h3 class="juegos-destacados__nombre">Hollow Knight</h3>
+                <p class="juegos-destacados__precio">$U 350</p>
+                <a class="juegos-destacados__boton" href="">Ver más</a>
+              </article>
+            </div>
 
-          <div class="juego-card">
-            <img src="" alt="" />
-            <p class="nombre">Forza Horizon 6</p>
-            <p class="precio">$U 300</p>
-            <a href="">Ver más</a>
-          </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="juegos-destacados__tarjeta">
+                <img
+                  class="juegos-destacados__imagen"
+                  src="IMG/Portadas/portada-forza.webp"
+                  alt="Forza Horizon 6"
+                />
+                <h3 class="juegos-destacados__nombre">Forza Horizon 6</h3>
+                <p class="juegos-destacados__precio">$U 900</p>
+                <a class="juegos-destacados__boton" href="">Ver más</a>
+              </article>
+            </div>
 
-          <div class="juego-card">
-            <img src="" alt="" />
-            <p class="nombre">Resident Evil Requiem</p>
-            <p class="precio">$U 300</p>
-            <a href="">Ver más</a>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="juegos-destacados__tarjeta">
+                <img
+                  class="juegos-destacados__imagen"
+                  src="IMG/Portadas/portada-reRequiem.webp"
+                  alt="Resident Evil Requiem"
+                />
+                <h3 class="juegos-destacados__nombre">Resident Evil Requiem</h3>
+                <p class="juegos-destacados__precio">$U 1200</p>
+                <a class="juegos-destacados__boton" href="">Ver más</a>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="productos">
-        <h2>Productos</h2>
+        <div class="container">
+          <h2 class="productos__titulo">Productos</h2>
 
-        <div class="productos-grid">
-          <div class="producto-card">
-            <img src="" alt="Taza gamer" />
-            <p class="nombre">Taza MoreGames</p>
-            <p class="precio">$U 350</p>
-            <a href="">Ver más</a>
-          </div>
+          <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="productos__tarjeta">
+                <img class="productos__imagen" src="" alt="Taza MoreGames" />
+                <h3 class="productos__nombre">Taza MoreGames</h3>
+                <p class="productos__precio">$U 350</p>
+                <a class="productos__boton" href="">Ver más</a>
+              </article>
+            </div>
 
-          <div class="producto-card">
-            <img src="" alt="Remera gamer" />
-            <p class="nombre">Remera Pixel Edition</p>
-            <p class="precio">$U 790</p>
-            <a href="">Ver más</a>
-          </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="productos__tarjeta">
+                <img
+                  class="productos__imagen"
+                  src=""
+                  alt="Remera Pixel Edition"
+                />
+                <h3 class="productos__nombre">Remera Pixel Edition</h3>
+                <p class="productos__precio">$U 790</p>
+                <a class="productos__boton" href="">Ver más</a>
+              </article>
+            </div>
 
-          <div class="producto-card">
-            <img src="" alt="Mouse pad" />
-            <p class="nombre">Mouse Pad XL RGB</p>
-            <p class="precio">$U 650</p>
-            <a href="">Ver más</a>
-          </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="productos__tarjeta">
+                <img class="productos__imagen" src="" alt="Mouse Pad XL RGB" />
+                <h3 class="productos__nombre">Mouse Pad XL RGB</h3>
+                <p class="productos__precio">$U 650</p>
+                <a class="productos__boton" href="">Ver más</a>
+              </article>
+            </div>
 
-          <div class="producto-card">
-            <img src="" alt="Llavero gamer" />
-            <p class="nombre">Llavero Creeper</p>
-            <p class="precio">$U 190</p>
-            <a href="">Ver más</a>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="productos__tarjeta">
+                <img class="productos__imagen" src="" alt="Llavero Creeper" />
+                <h3 class="productos__nombre">Llavero Creeper</h3>
+                <p class="productos__precio">$U 190</p>
+                <a class="productos__boton" href="">Ver más</a>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="ofertas">
-        <h2>Ofertas de la semana</h2>
+        <div class="container">
+          <h2 class="ofertas__titulo">Ofertas de la semana</h2>
 
-        <div class="ofertas-grid">
-          <div class="oferta-card">
-            <img src="" alt="Taza Minecraft" />
-            <p>Taza Minecraft</p>
-            <p><del>$U 450</del></p>
-            <p>$U 350</p>
+          <div class="row g-4">
+            <div class="col-12 col-md-4">
+              <article class="ofertas__tarjeta">
+                <img class="ofertas__imagen" src="IMG/Portadas/portada-rdr2.webp" alt="juego red dead redemption 2" />
+                <h3 class="ofertas__nombre">Red Dead Redemption 2</h3>
+                <p class="ofertas__precio-anterior">
+                  <del>$U 450</del>
+                </p>
+                <p class="ofertas__precio">$U 350</p>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <article class="ofertas__tarjeta">
+                <img
+                  class="ofertas__imagen"
+                  src="IMG/Portadas/portada-gta5.webp"
+                  alt="juego GTA 5"
+                />
+                <h3 class="ofertas__nombre">GTA V</h3>
+                <p class="ofertas__precio-anterior">
+                  <del>$U 1050</del>
+                </p>
+                <p class="ofertas__precio">$U 850</p>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <article class="ofertas__tarjeta">
+                <img class="ofertas__imagen" 
+                  src="IMG/Portadas/portada-eldenRing.webp" 
+                  alt="juego Elden ring" />
+                <h3 class="ofertas__nombre">Elden Ring</h3>
+                <p class="ofertas__precio-anterior">
+                  <del>$U 850</del>
+                </p>
+                <p class="ofertas__precio">$U 650</p>
+              </article>
+            </div>
           </div>
 
-          <div class="oferta-card">
-            <img src="" alt="Remera Hollow Knight" />
-            <p>Remera Hollow Knight</p>
-            <p><del>$U 1.050</del></p>
-            <p>$U 850</p>
-          </div>
-
-          <div class="oferta-card">
-            <img src="" alt="Mouse Pad XL RGB" />
-            <p>Mouse Pad XL RGB</p>
-            <p><del>$U 850</del></p>
-            <p>$U 650</p>
+          <div class="text-center mt-4">
+            <a class="ofertas__boton" href="Page/ofertas.html">
+              Ver todas las ofertas
+            </a>
           </div>
         </div>
-
-        <a href="ofertas.html">Ver todas las ofertas</a>
       </section>
 
       <section class="sobre-nosotros">
-        <h2>Sobre nosotros</h2>
+        <div class="container">
+          <h2 class="sobre-nosotros__titulo">Sobre nosotros</h2>
 
-        <p>
-          MoreGames es una tienda ficticia especializada en videojuegos para PC,
-          PlayStation y Xbox.
-        </p>
+          <p class="sobre-nosotros__texto">
+            MoreGames es una tienda ficticia especializada en videojuegos para
+            PC, PlayStation y Xbox.
+          </p>
 
-        <p>
-          Nuestro objetivo es ofrecer los mejores títulos, accesorios y
-          productos gamer a precios accesibles para toda la comunidad.
-        </p>
+          <p class="sobre-nosotros__texto">
+            Nuestro objetivo es ofrecer los mejores títulos, accesorios y
+            productos gamer a precios accesibles para toda la comunidad.
+          </p>
 
-        <p>
-          Contamos con un amplio catálogo de videojuegos, merchandising,
-          periféricos y ofertas especiales durante todo el año.
-        </p>
+          <p class="sobre-nosotros__texto">
+            Contamos con un amplio catálogo de videojuegos, merchandising y
+            ofertas especiales para los fanáticos del gaming.
+          </p>
+
+          <div class="sobre-nosotros__estadisticas">
+            <div class="sobre-nosotros__dato">
+              <h3>100+</h3>
+              <p>Videojuegos</p>
+            </div>
+
+            <div class="sobre-nosotros__dato">
+              <h3>50+</h3>
+              <p>Productos gamer</p>
+            </div>
+
+            <div class="sobre-nosotros__dato">
+              <h3>24/7</h3>
+              <p>Atención online</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="footer__top">
-        
         <div class="footer__top__logo">
           <img
             class=""
@@ -177,10 +268,16 @@
 
         <nav class="footer__top__nav">
           <a class="footer__top__nav__link" href="index.html">Inicio</a>
-          <a class="footer__top__nav__link" href="Page/catalogo.html">Catálogo</a>
-          <a class="footer__top__nav__link" href="Page/productos.html">Productos</a>
+          <a class="footer__top__nav__link" href="Page/catalogo.html"
+            >Catálogo</a
+          >
+          <a class="footer__top__nav__link" href="Page/productos.html"
+            >Productos</a
+          >
           <a class="footer__top__nav__link" href="Page/ofertas.html">Ofertas</a>
-          <a class="footer__top__nav__link" href="Page/contacto.html">Contacto</a>
+          <a class="footer__top__nav__link" href="Page/contacto.html"
+            >Contacto</a
+          >
         </nav>
       </div>
 
@@ -190,6 +287,7 @@
       </div>
     </footer>
 
-    <script src="" async defer></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

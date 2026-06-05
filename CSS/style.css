@@ -104,7 +104,8 @@ table {
   gap: 10px;
 }
 .footer__top__logo img {
-  width: 30px;
+  width: 40px;
+  height: auto;
 }
 .footer__top__logo h2 span {
   color: #3B82F6;
@@ -133,6 +134,164 @@ table {
 }
 .footer__bottom {
   font-size: 12px;
+}
+
+.juegos-destacados__titulo, .productos__titulo, .ofertas__titulo, .sobre-nosotros__titulo {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.juegos-destacados__tarjeta, .productos__tarjeta, .ofertas__tarjeta, .sobre-nosotros__dato {
+  background-color: #1E1E1E;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.juegos-destacados__tarjeta:hover, .productos__tarjeta:hover, .ofertas__tarjeta:hover, .sobre-nosotros__dato:hover {
+  transform: translateY(-8px);
+}
+
+.juegos-destacados__imagen, .productos__imagen, .ofertas__imagen {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.juegos-destacados__nombre, .productos__nombre, .ofertas__nombre {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.juegos-destacados__precio, .productos__precio, .ofertas__precio {
+  color: #3B82F6;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 8rem 2rem;
+  gap: 1.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../../IMG/hero-gamer.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+.hero__titulo {
+  font-size: 3rem;
+  color: #fff;
+}
+.hero__texto {
+  max-width: 600px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #fff;
+}
+.hero__boton {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.hero__boton:hover {
+  background-color: #60A5FA;
+}
+
+.juegos-destacados {
+  padding: 2rem 2rem;
+}
+.juegos-destacados__boton {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.juegos-destacados__boton:hover {
+  background-color: #60A5FA;
+}
+
+.productos {
+  padding: 2rem 2rem;
+}
+.productos__boton {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.productos__boton:hover {
+  background-color: #60A5FA;
+}
+
+.ofertas {
+  padding: 2rem 2rem;
+}
+.ofertas__boton {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.ofertas__boton:hover {
+  background-color: #60A5FA;
+}
+
+.sobre-nosotros {
+  background-color: #272727;
+  padding: 2rem 2rem;
+}
+.sobre-nosotros .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.sobre-nosotros__texto {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+.sobre-nosotros__estadisticas {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.sobre-nosotros__dato h3 {
+  color: #3B82F6;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.sobre-nosotros__dato p {
+  color: #FFFFFF;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
