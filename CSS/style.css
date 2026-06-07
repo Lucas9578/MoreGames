@@ -186,27 +186,21 @@ table {
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  padding: 8rem 2rem;
-  gap: 1.5rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../../IMG/hero-gamer.jpg");
+  padding: 5rem 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../IMG/banners/hero-gamer.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 1rem;
 }
-.hero__titulo {
+.hero__titulo,
+.hero h2 {
+  color: #FFFFFF;
   font-size: 3rem;
-  color: #fff;
+  margin-bottom: 1rem;
 }
-.hero__texto {
-  max-width: 600px;
+.hero p {
+  color: #FFFFFF;
   font-size: 1.2rem;
-  line-height: 1.6;
-  color: #fff;
 }
 .hero__boton {
   background-color: #3B82F6;
@@ -304,7 +298,7 @@ table {
 .catalogo-hero {
   text-align: center;
   padding: 5rem 2rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../IMG/banner-catalogo.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../IMG/banners/banner-catalogo.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -379,6 +373,94 @@ table {
   .catalogo-hero p {
     font-size: 1rem;
   }
+}
+.productos-hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../IMG/banners/banner-productos.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.productos-hero__titulo,
+.productos-hero h2 {
+  color: #FFFFFF;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.productos-hero p {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
+
+.productos {
+  padding: 3rem 0;
+}
+.productos__tarjeta {
+  background-color: #1E1E1E;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.productos__tarjeta:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.productos__imagen {
+  width: 80%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+.productos__nombre {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.productos__precio {
+  color: #3B82F6;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.productos__boton {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.productos__boton:hover {
+  background-color: #60A5FA;
+}
+.productos__boton {
+  margin-top: auto;
+}
+
+.ofertas-hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../IMG/banners/banner-catalogo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.ofertas-hero__titulo,
+.ofertas-hero h2 {
+  color: #FFFFFF;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.ofertas-hero p {
+  color: #FFFFFF;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

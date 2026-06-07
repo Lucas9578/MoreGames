@@ -1,0 +1,8 @@
+@use "../Generales/reset";
+@use "../Generales/variables" as *;
+@use "../Generales/mixins" as *;
+@use "../Generales/extends" as *;
+
+.ofertas-hero {
+  @include hero("../IMG/banners/banner-catalogo.jpg");
+}

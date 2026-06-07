@@ -4,31 +4,7 @@
 @use "../Generales/extends" as *;
 
 .catalogo-hero {
-  text-align: center;
-
-  padding: 5rem 2rem;
-
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.75)
-    ),
-    url("../IMG/banner-catalogo.jpg");
-
-  background-size: cover;
-  background-position: center;
-
-  &__titulo,
-  h2 {
-    color: $text;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-
-  p {
-    color: $text;
-    font-size: 1.2rem;
-  }
+  @include hero("../IMG/banners/banner-catalogo.jpg");
 }
 
 .catalogo {

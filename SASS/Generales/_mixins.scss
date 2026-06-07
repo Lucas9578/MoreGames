@@ -16,3 +16,28 @@
     background-color: $hover;
   }
 }
+
+@mixin hero($imagen-fondo) {
+  text-align: center;
+
+  padding: 5rem 2rem;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url($imagen-fondo);
+
+  background-size: cover;
+  background-position: center;
+
+  &__titulo,
+  h2 {
+    color: $text;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $text;
+    font-size: 1.2rem;
+  }
+}
