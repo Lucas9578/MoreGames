@@ -2,11 +2,9 @@
 @use "variables" as *;
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: $header;
 
+  color: white;
   font-family: $font-text;
 
   width: 100%;
@@ -19,19 +17,24 @@
     gap: 10px;
 
     img {
+      height: auto;
       width: 50px;
     }
 
     h1 {
+      color: white;
       span {
         color: $primary;
       }
     }
   }
 
-  &__nav {
-    display: flex;
-    gap: 2rem;
+  .nav-item {
+
+    .active {
+      font-weight: bold;
+      color: white;
+    }
   }
 
   &__link {
@@ -43,7 +46,7 @@
     }
 
     &--active {
-      color: #3b82f6;
+      color: white;
       font-weight: bold;
     }
   }
@@ -115,5 +118,12 @@
 
   &__bottom {
     font-size: 12px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 10px;
   }
 }

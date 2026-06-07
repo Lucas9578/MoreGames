@@ -47,10 +47,8 @@ table {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #1E1E1E;
+  color: white;
   font-family: "Inter", sans-serif;
   width: 100%;
   padding: 10px 50px;
@@ -62,14 +60,18 @@ table {
   gap: 10px;
 }
 .header__logo img {
+  height: auto;
   width: 50px;
+}
+.header__logo h1 {
+  color: white;
 }
 .header__logo h1 span {
   color: #3B82F6;
 }
-.header__nav {
-  display: flex;
-  gap: 2rem;
+.header .nav-item .active {
+  font-weight: bold;
+  color: white;
 }
 .header__link {
   color: white;
@@ -79,7 +81,7 @@ table {
   text-decoration: underline;
 }
 .header__link--active {
-  color: #3b82f6;
+  color: white;
   font-weight: bold;
 }
 
@@ -136,6 +138,11 @@ table {
   font-size: 12px;
 }
 
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 10px;
+  }
+}
 .juegos-destacados__titulo, .productos__titulo, .ofertas__titulo, .sobre-nosotros__titulo {
   color: #FFFFFF;
   text-align: center;
@@ -292,6 +299,86 @@ table {
 .sobre-nosotros__dato p {
   color: #FFFFFF;
   font-size: 1rem;
+}
+
+.catalogo-hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../IMG/banner-catalogo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.catalogo-hero__titulo,
+.catalogo-hero h2 {
+  color: #FFFFFF;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.catalogo-hero p {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
+
+.catalogo {
+  padding: 4rem 0;
+}
+.catalogo__tarjeta {
+  background-color: #1E1E1E;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.catalogo__tarjeta:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.catalogo__imagen {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+.catalogo__nombre {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.catalogo__precio {
+  color: #3B82F6;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.catalogo__boton {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.catalogo__boton:hover {
+  background-color: #60A5FA;
+}
+.catalogo__boton {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .catalogo-hero h2 {
+    font-size: 2.2rem;
+  }
+  .catalogo-hero p {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

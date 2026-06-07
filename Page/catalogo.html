@@ -1,10 +1,19 @@
 <!doctype html>
 <html lang="es">
-  <head>
+    <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Catalogo - MoreGames</title>
+    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Catálogo - MoreGames</title>
-    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <link rel="icon" href="IMG/Moregames-logoSimple.webp" type="image/png" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,27 +22,69 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Orbitron:wght@500;700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="../CSS/style.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="header__logo">
-        <img
-          class=""
-          src="../IMG/Moregames-logoSimple.webp"
-          alt="Logo MoreGames"
-        />
-        <h1>More<span>Games</span></h1>
-      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand header__logo" href="../index.html">
+            <img src="../IMG/Moregames-logoSimple.webp" width="50px" height="auto" alt="Logo MoreGames" />
+            <h1>More<span>Games</span></h1>
+          </a>
 
-      <nav class="header__nav">
-        <a class="header__link" href="../index.html"
-          >Inicio</a
-        >
-        <a class="header__link header__link--active" href="catalogo.html">Catálogo</a>
-        <a class="header__link" href="productos.html">Productos</a>
-        <a class="header__link" href="ofertas.html">Ofertas</a>
-        <a class="header__link" href="contacto.html">Contacto</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMoreGames"
+            aria-controls="navbarMoreGames"
+            aria-expanded="false"
+            aria-label="Abrir navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarMoreGames">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active header__link"
+                  aria-current="page"
+                  href="../index.html"
+                >
+                  Inicio
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link header__link" href="catalogo.html">
+                  Catálogo
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link header__link" href="productos.html">
+                  Productos
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link header__link" href="ofertas.html">
+                  Ofertas
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link header__link" href="contacto.html">
+                  Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -46,61 +97,116 @@
       </section>
 
       <section class="catalogo">
-        <div class="catalogo-grid">
-          <div class="juego-card">
-            <img src="" alt="Minecraft" />
-            <p class="nombre">Minecraft</p>
-            <p class="precio">$U 300</p>
-            <a href="producto.html">Ver más</a>
-          </div>
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="catalogo__tarjeta">
+                <img class="catalogo__imagen" src="../IMG/Portadas/portada-minecraft.webp" alt="Minecraft" />
+                <h3 class="catalogo__nombre">Minecraft</h3>
+                <p class="catalogo__precio">$U 300</p>
+                <a class="catalogo__boton" href="#">Ver más</a>
+              </article>
+            </div>
 
-          <div class="juego-card">
-            <img src="" alt="Hollow Knight" />
-            <p class="nombre">Hollow Knight</p>
-            <p class="precio">$U 300</p>
-            <a href="producto.html">Ver más</a>
-          </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="catalogo__tarjeta">
+                <img class="catalogo__imagen" src="../IMG/Portadas/portada-hollowknigth.webp" alt="Hollow Knight" />
+                <h3 class="catalogo__nombre">Hollow Knight</h3>
+                <p class="catalogo__precio">$U 300</p>
+                <a class="catalogo__boton" href="#">Ver más</a>
+              </article>
+            </div>
 
-          <div class="juego-card">
-            <img src="" alt="Forza Horizon 6" />
-            <p class="nombre">Forza Horizon 6</p>
-            <p class="precio">$U 300</p>
-            <a href="producto.html">Ver más</a>
-          </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="catalogo__tarjeta">
+                <img class="catalogo__imagen" src="../IMG/Portadas/portada-forza.webp" alt="Forza Horizon 6" />
+                <h3 class="catalogo__nombre">Forza Horizon 6</h3>
+                <p class="catalogo__precio">$U 300</p>
+                <a class="catalogo__boton" href="#">Ver más</a>
+              </article>
+            </div>
 
-          <div class="juego-card">
-            <img src="" alt="Resident Evil Requiem" />
-            <p class="nombre">Resident Evil Requiem</p>
-            <p class="precio">$U 300</p>
-            <a href="producto.html">Ver más</a>
-          </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="catalogo__tarjeta">
+                <img class="catalogo__imagen" src="../IMG/Portadas/portada-reRequiem.webp" alt="Resident Evil Requiem" />
+                <h3 class="catalogo__nombre">Resident Evil Requiem</h3>
+                <p class="catalogo__precio">$U 300</p>
+                <a class="catalogo__boton" href="#">Ver más</a>
+              </article>
+            </div>
 
-          <div class="juego-card">
-            <img src="" alt="Grand Theft Auto V" />
-            <p class="nombre">Grand Theft Auto V</p>
-            <p class="precio">$U 450</p>
-            <a href="producto.html">Ver más</a>
-          </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="catalogo__tarjeta">
+                <img class="catalogo__imagen" src="../IMG/Portadas/portada-gta5.webp" alt="Grand Theft Auto V" />
+                <h3 class="catalogo__nombre">Grand Theft Auto V</h3>
+                <p class="catalogo__precio">$U 300</p>
+                <a class="catalogo__boton" href="#">Ver más</a>
+              </article>
+            </div>
 
-          <div class="juego-card">
-            <img src="" alt="Red Dead Redemption 2" />
-            <p class="nombre">Red Dead Redemption 2</p>
-            <p class="precio">$U 550</p>
-            <a href="producto.html">Ver más</a>
-          </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="catalogo__tarjeta">
+                <img class="catalogo__imagen" src="../IMG/Portadas/portada-rdr2.webp" alt="Red Dead Redemption 2" />
+                <h3 class="catalogo__nombre">Red Dead Redemption 2</h3>
+                <p class="catalogo__precio">$U 300</p>
+                <a class="catalogo__boton" href="#">Ver más</a>
+              </article>
+            </div>
 
-          <div class="juego-card">
-            <img src="" alt="EA Sports FC 26" />
-            <p class="nombre">EA Sports FC 26</p>
-            <p class="precio">$U 650</p>
-            <a href="producto.html">Ver más</a>
-          </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="catalogo__tarjeta">
+                <img class="catalogo__imagen" src="../IMG/Portadas/potada-eafc26.webp" alt="EA Sports FC 26" />
+                <h3 class="catalogo__nombre">EA Sports FC 26</h3>
+                <p class="catalogo__precio">$U 300</p>
+                <a class="catalogo__boton" href="#">Ver más</a>
+              </article>
+            </div>
 
-          <div class="juego-card">
-            <img src="" alt="Cyberpunk 2077" />
-            <p class="nombre">Cyberpunk 2077</p>
-            <p class="precio">$U 500</p>
-            <a href="producto.html">Ver más</a>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="catalogo__tarjeta">
+                <img class="catalogo__imagen" src="../IMG/Portadas/portada-cyberpunk.webp" alt="Cyberpunk 2077" />
+                <h3 class="catalogo__nombre">Cyberpunk 2077</h3>
+                <p class="catalogo__precio">$U 300</p>
+                <a class="catalogo__boton" href="#">Ver más</a>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="catalogo__tarjeta">
+                <img class="catalogo__imagen" src="../IMG/Portadas/portada-eldenRing.webp" alt="Elden Ring" />
+                <h3 class="catalogo__nombre">Elden Ring</h3>
+                <p class="catalogo__precio">$U 300</p>
+                <a class="catalogo__boton" href="#">Ver más</a>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="catalogo__tarjeta">
+                <img class="catalogo__imagen" src="../IMG/Portadas/portada-godOfWar.webp" alt="God of War" />
+                <h3 class="catalogo__nombre">God of War: Ragnarok</h3>
+                <p class="catalogo__precio">$U 300</p>
+                <a class="catalogo__boton" href="#">Ver más</a>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="catalogo__tarjeta">
+                <img class="catalogo__imagen" src="../IMG/Portadas/portada-mortalKombat.webp" alt="Mortal Kombat 11" />
+                <h3 class="catalogo__nombre">Mortal Kombat 11</h3>
+                <p class="catalogo__precio">$U 300</p>
+                <a class="catalogo__boton" href="#">Ver más</a>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="catalogo__tarjeta">
+                <img class="catalogo__imagen" src="../IMG/Portadas/portada-battlefield.webp" alt="Battlefield 6" />
+                <h3 class="catalogo__nombre">Battlefield 6</h3>
+                <p class="catalogo__precio">$U 300</p>
+                <a class="catalogo__boton" href="#">Ver más</a>
+              </article>
+            </div>
+
           </div>
         </div>
       </section>
@@ -108,7 +214,6 @@
 
     <footer class="footer">
       <div class="footer__top">
-        
         <div class="footer__top__logo">
           <img
             class=""
@@ -117,7 +222,6 @@
           />
           <h2>More<span>Games</span></h2>
         </div>
-      
 
         <nav class="footer__top__nav">
           <a class="footer__top__nav__link" href="../index.html">Inicio</a>
@@ -133,5 +237,8 @@
         <p>© 2026 MoreGames</p>
       </div>
     </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
