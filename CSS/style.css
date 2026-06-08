@@ -46,13 +46,27 @@ table {
   border-spacing: 0;
 }
 
+@keyframes borde-animado {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
 .header {
-  background-color: #1E1E1E;
-  color: white;
-  font-family: "Inter", sans-serif;
+  position: relative;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  padding: 10px 50px;
-  border-bottom: 1px solid white;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #60A5FA, white, #60A5FA, transparent);
+  background-size: 200% 100%;
+  animation: borde-animado 3s linear infinite;
 }
 .header__logo {
   display: flex;
@@ -461,6 +475,184 @@ table {
 .ofertas-hero p {
   color: #FFFFFF;
   font-size: 1.2rem;
+}
+
+.ofertas {
+  padding: 3rem 0;
+}
+.ofertas__tarjeta {
+  background-color: #1E1E1E;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ofertas__tarjeta:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.ofertas__imagen {
+  width: 80%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+.ofertas__nombre {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.ofertas__precio-anterior {
+  color: #888;
+  margin-bottom: 0.2rem;
+}
+.ofertas__precio {
+  color: #3B82F6;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.ofertas__boton {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.ofertas__boton:hover {
+  background-color: #60A5FA;
+}
+.ofertas__boton {
+  margin-top: auto;
+}
+
+.promocion {
+  padding: 5rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), linear-gradient(135deg, #3B82F6);
+  text-align: center;
+}
+.promocion__contenido {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.promocion__titulo {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.promocion__texto {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.contacto-hero {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), #3B82F6;
+  background-size: cover;
+  background-position: center;
+}
+.contacto-hero h2 {
+  color: #FFFFFF;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.contacto-hero p {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
+
+.contacto-info {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.contacto-info__tarjeta {
+  background-color: #1E1E1E;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.contacto-info__tarjeta:hover {
+  transform: translateY(-5px);
+}
+.contacto-info__titulo {
+  color: #3B82F6;
+  margin-bottom: 1rem;
+}
+.contacto-info__texto {
+  color: #FFFFFF;
+}
+
+.contacto-formulario {
+  padding: 4rem 2rem;
+}
+.contacto-formulario__titulo {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.contacto-formulario__form {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #1E1E1E;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.contacto-formulario__campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.contacto-formulario__label {
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.contacto-formulario__input, .contacto-formulario__textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.5rem;
+  background-color: #121212;
+  color: #FFFFFF;
+}
+.contacto-formulario__input:focus, .contacto-formulario__textarea:focus {
+  outline: none;
+  border-color: #3B82F6;
+}
+.contacto-formulario__textarea {
+  resize: none;
+}
+.contacto-formulario__boton {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.contacto-formulario__boton:hover {
+  background-color: #60A5FA;
+}
+.contacto-formulario__boton {
+  display: block;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

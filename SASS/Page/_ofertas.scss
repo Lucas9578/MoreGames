@@ -6,3 +6,97 @@
 .ofertas-hero {
   @include hero("../IMG/banners/banner-catalogo.jpg");
 }
+
+.ofertas {
+  padding: 3rem 0;
+
+  &__tarjeta {
+    background-color: $header;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__imagen {
+    width: 80%;
+    height: 220px;
+    object-fit: cover;
+
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  &__nombre {
+    color: $text;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  &__precio-anterior {
+    color: #888;
+    margin-bottom: 0.2rem;
+  }
+
+  &__precio {
+    color: $primary;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  &__boton {
+    @include boton;
+
+    margin-top: auto;
+  }
+}
+
+.promocion {
+  padding: 5rem 0;
+
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6))
+  ,linear-gradient(
+    135deg,
+    $primary
+  );
+
+  text-align: center;
+
+  &__contenido {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  &__titulo {
+    color: $text;
+
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    margin-bottom: 1rem;
+  }
+
+  &__texto {
+    color: $text;
+
+    font-size: 1.2rem;
+    line-height: 1.7;
+
+    margin-bottom: 2rem;
+  }
+}

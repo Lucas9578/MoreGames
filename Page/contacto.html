@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="es">
-    <head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Contacto - MoreGames</title>
@@ -31,7 +31,12 @@
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand header__logo" href="../index.html">
-            <img src="../IMG/Moregames-logoSimple.webp" width="50px" height="auto" alt="Logo MoreGames" />
+            <img
+              src="../IMG/Moregames-logoSimple.webp"
+              width="50px"
+              height="auto"
+              alt="Logo MoreGames"
+            />
             <h1>More<span>Games</span></h1>
           </a>
 
@@ -89,74 +94,102 @@
     </header>
 
     <main>
-
       <section class="contacto-hero">
         <h2>Contacto</h2>
-        <p>
-          ¿Tienes alguna consulta? Estamos aquí para ayudarte.
-        </p>
+        <p>¿Tienes alguna consulta? Estamos aquí para ayudarte.</p>
       </section>
 
       <section class="contacto-info">
-
-        <div class="info-card">
-          <h3>Dirección</h3>
-          <p>Maldonado, Uruguay</p>
+        <div class="contacto-info__tarjeta">
+          <h3 class="contacto-info__titulo">Correo electrónico</h3>
+          <p class="contacto-info__texto">contacto@moregames.com</p>
         </div>
 
-        <div class="info-card">
-          <h3>Correo electrónico</h3>
-          <p>contacto@moregames.com</p>
+        <div class="contacto-info__tarjeta">
+          <h3 class="contacto-info__titulo">Teléfono</h3>
+          <p class="contacto-info__texto">+598 99 123 456</p>
         </div>
-
-        <div class="info-card">
-          <h3>Teléfono</h3>
-          <p>+598 99 123 456</p>
-        </div>
-
       </section>
 
       <section class="contacto-formulario">
+        <h2 class="contacto-formulario__titulo">Envíanos un mensaje</h2>
 
-        <h2>Envíanos un mensaje</h2>
-
-        <form>
-
-          <div class="campo">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" />
+        <form class="contacto-formulario__form">
+          <div class="contacto-formulario__campo">
+            <label class="contacto-formulario__label" for="nombre"
+              >Nombre</label
+            >
+            <input
+              class="contacto-formulario__input"
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ej: Juan Pérez"
+            />
           </div>
 
-          <div class="campo">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" />
+          <div class="contacto-formulario__campo">
+            <label class="contacto-formulario__label" for="email"
+              >Correo electrónico</label
+            >
+            <input
+              class="contacto-formulario__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ej: juan@email.com"
+              required
+            />
           </div>
 
-          <div class="campo">
-            <label for="asunto">Asunto</label>
-            <input type="text" id="asunto" name="asunto" />
+          <div class="contacto-formulario__campo">
+            <label class="contacto-formulario__label" for="tipo">
+              Tipo de consulta
+            </label>
+
+            <select
+              class="contacto-formulario__input"
+              id="tipo"
+              name="tipo"
+              required
+            >
+              <option value="" selected disabled>Selecciona una opción</option>
+
+              <option value="videojuego">Consulta sobre un videojuego</option>
+
+              <option value="producto">Consulta sobre un producto</option>
+
+              <option value="soporte">Soporte técnico</option>
+
+              <option value="reclamo">Reclamo</option>
+
+              <option value="otro">Otro</option>
+            </select>
           </div>
 
-          <div class="campo">
-            <label for="mensaje">Mensaje</label>
+          <div class="contacto-formulario__campo">
+            <label class="contacto-formulario__label" for="mensaje"
+              >Mensaje</label
+            >
             <textarea
+              class="contacto-formulario__textarea"
               id="mensaje"
               name="mensaje"
               rows="6"
+              placeholder="Escribe aquí tu mensaje"
+              required
             ></textarea>
           </div>
 
-          <button type="submit">Enviar mensaje</button>
-
+          <button class="contacto-formulario__boton" type="submit">
+            Enviar mensaje
+          </button>
         </form>
-
       </section>
-
     </main>
 
     <footer class="footer">
       <div class="footer__top">
-        
         <div class="footer__top__logo">
           <img
             class=""
@@ -165,7 +198,6 @@
           />
           <h2>More<span>Games</span></h2>
         </div>
-      
 
         <nav class="footer__top__nav">
           <a class="footer__top__nav__link" href="../index.html">Inicio</a>
@@ -184,6 +216,5 @@
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  
   </body>
 </html>

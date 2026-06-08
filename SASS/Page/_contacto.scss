@@ -1,0 +1,123 @@
+@use "../Generales/reset";
+@use "../Generales/variables" as *;
+@use "../Generales/mixins" as *;
+@use "../Generales/extends" as *;
+
+.contacto-hero {
+  padding: 5rem 2rem;
+  text-align: center;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+    $primary;
+
+  background-size: cover;
+  background-position: center;
+
+  h2 {
+    color: $text;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $text;
+    font-size: 1.2rem;
+  }
+}
+
+.contacto-info {
+  padding: 4rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  &__tarjeta {
+    background-color: $header;
+
+    padding: 2rem;
+    border-radius: 1rem;
+
+    min-width: 280px;
+
+    text-align: center;
+
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__titulo {
+    color: $primary;
+    margin-bottom: 1rem;
+  }
+
+  &__texto {
+    color: $text;
+  }
+}
+
+.contacto-formulario {
+  padding: 4rem 2rem;
+
+  &__titulo {
+    color: $text;
+    text-align: center;
+    font-size: 2.5rem;
+
+    margin-bottom: 2rem;
+  }
+
+  &__form {
+    max-width: 700px;
+    margin: 0 auto;
+
+    background-color: $header;
+
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+
+  &__campo {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 1.5rem;
+  }
+
+  &__label {
+    color: $text;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  &__input,
+  &__textarea {
+    padding: 0.75rem 1rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.5rem;
+
+    background-color: $background;
+    color: $text;
+
+    &:focus {
+      outline: none;
+      border-color: $primary;
+    }
+  }
+
+  &__textarea {
+    resize: none;
+  }
+
+  &__boton {
+    @include boton;
+    display: block;
+    margin: 0 auto;
+  }
+}
