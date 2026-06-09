@@ -101,18 +101,15 @@ table {
 
 .footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   background-color: #1E1E1E;
-  font-family: "Inter", sans-serif;
-  width: 100%;
   padding: 20px 50px;
 }
 .footer__top {
   display: flex;
-  flex-direction: row;
-  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 .footer__top__logo {
   display: flex;
@@ -149,12 +146,33 @@ table {
   font-weight: bold;
 }
 .footer__bottom {
-  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
 }
 
 @media (max-width: 768px) {
   .header {
     padding: 10px 10px;
+  }
+  .footer {
+    padding: 20px;
+  }
+  .footer .footer__top {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .footer .footer__top .footer__top__nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
   }
 }
 .juegos-destacados__titulo, .productos__titulo, .ofertas__titulo, .sobre-nosotros__titulo {
